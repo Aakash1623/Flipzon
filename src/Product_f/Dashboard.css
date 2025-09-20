@@ -13,7 +13,7 @@
     padding-top: 50px;
     justify-content: space-around;
     background-color: rgb(113, 238, 119);
-    /* position: relative; */
+    position: sticky;
 }
 .right{
     flex-basis: 75%;
@@ -25,6 +25,24 @@
     flex-wrap: wrap;
     overflow: auto;
     background-color: rgb(239, 239, 142);
+}
+#category{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, black, purple, blue);
+
+}
+.option{
+    background-color: rgb(60, 253, 60);
+    color: black;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .profile{
