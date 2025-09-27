@@ -14,7 +14,7 @@ const Login = () => {
     let handleLogin =async(e)=>{
         e.preventDefault()
 
-        let res = await axios.get("https://flipzon-backend.onrender.com/users")
+        let res = await axios.get("https://flipzon-backend.onrender.com/api/users")
         let users = res.data
         console.log(users)
 

@@ -17,8 +17,10 @@ const Signup = () => {
                 userPass : userPass,
                 userEmail : email
             }
+            try{
 
-        await axios.post("https://flipzon-backend.onrender.com/users",payload)
+            
+        await axios.post("https://flipzon-backend.onrender.com/api/users", payload)
 
             alert("signup done")
 
@@ -27,8 +29,11 @@ const Signup = () => {
             setUserPass("")
 
             navigate("/login")
+            } catch(err){
+                console.error("Signup failed: ",err);
 
-
+                
+            }
     }
   return (
      <>
