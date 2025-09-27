@@ -98,3 +98,30 @@ footer>a{
     font-size: 18px;
     font-weight: bold;
 }
+/* for mobile */
+
+@media (max-width :600px) {
+   .SSignup{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(122, 122, 255);
+   }
+   
+   .SSignup>.Rright{
+    position: absolute;
+    flex-basis: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(97, 125, 237, 0.622);
+    border-radius: 12px;
+
+    }
+    .Lleft>img{
+        display: none;
+    }
+    
+}

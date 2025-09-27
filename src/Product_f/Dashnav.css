@@ -26,3 +26,29 @@ nav>h1::first-letter{
   color: rgb(255, 8, 8);
   font-size: 38px;
 }
+
+/*  for mobile */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    gap: 50px;
+    overflow:scroll;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  nav > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  ul {
+    flex-direnoneon: row;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
+  ul li {
+    width: 100%;
+  }
+}

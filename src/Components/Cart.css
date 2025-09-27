@@ -69,3 +69,18 @@ e{
     background-color: aquamarine;
     color: black;
 }
+@media (max-width :600px) {
+
+   .r{
+
+    font-size: small;
+    display: flex;
+
+   }
+   p{
+    overflow-x: s;
+   }
+
+   
+
+}

@@ -46,3 +46,23 @@
     background-color: aquamarine;
     color: black;
 }
+@media (max-width :600px) {
+    .display{
+        display: flex;
+        gap: 20px;
+        
+    }
+    .cp{
+        height: 50px;
+        background-color: yellow;
+        color: black;
+        font-weight: bolder;
+        font-size: 14px;
+    }
+    .cp:active{
+
+        background-color: green;
+        color: white;
+    }
+   
+}

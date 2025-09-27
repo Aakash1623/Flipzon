@@ -44,7 +44,7 @@ let navigate =useNavigate()
                        <img src={e.image} alt={e.title} />
                     </div>
                    <div className="r">
-                     <h2>{e.title.slice(0,30)}...</h2>
+                     <h2>{e.title.slice(0,10)}...</h2>
                     <h3>Price: $ {e.price}</h3>
                     <h3>Rating : {e.rating.rate}</h3>
                     <p>Description :{e.description.slice(0,50)}...</p>
