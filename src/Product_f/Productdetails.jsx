@@ -27,7 +27,7 @@ let addcart=async()=>{
 
   let {id,...rest}=product
 
-  await axios.post("https://flipzon-backend.onrender.com/api/item",rest)
+  await axios.post("https://flipzon-backend.onrender.com/item",rest)
   alert("added to cart")
 
 }
