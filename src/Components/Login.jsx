@@ -14,8 +14,14 @@ const Login = () => {
     let handleLogin =async(e)=>{
         e.preventDefault()
 
-        let res = await axios.get("https://flipzon-backend.onrender.com/users")
-        let users = res.data
+        let users = [];
+        try {
+            let res = await axios.get("https://flipzon-backend.onrender.com/users");
+            users = res.data;
+        } catch (error) {
+            alert("Failed to fetch users. Please try again later.");
+            return;
+        }
         console.log(users)
 
         let user = users.find((ele)=> ele.userPass ==loginPass && ele.userEmail == loginemail)
