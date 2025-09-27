@@ -6,16 +6,11 @@ import { useNavigate } from 'react-router-dom'
 const Dashnav = () => {
 
   const navigate = useNavigate();
-  const logout = () => {
-    let logoutuser=JSON.parse(localStorage.getItem("user"))
-    // const name = localStorage.getItem("Name");
-    // const email = localStorage.getItem("Email");
-    // const password = localStorage.getItem("Password");
-    // console.log({ name, email, password });
-    if (logoutuser != null) {
-      localStorage.clear(); // Clear all localStorage to remove any session data
-      navigate("/", { replace: true }); // Redirect and replace history to prevent back navigation
-      window.location.reload(); // Reload the app to ensure a fresh state
+  const logout = async () => {
+    if(logout!=null){
+
+      navigate("/", { replace: true }); 
+      window.location.reload(); 
     }
   }
 
