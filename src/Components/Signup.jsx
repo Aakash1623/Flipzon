@@ -18,7 +18,7 @@ const Signup = () => {
                 userEmail : email
             }
 
-        await axios.post("http://localhost:5000/users",payload)
+        await axios.post("https://flipzon-backend.onrender.com/users",payload)
 
             alert("signup done")
 

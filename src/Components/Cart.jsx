@@ -14,7 +14,7 @@ let navigate =useNavigate()
     }
 
   const getdata = async () => {
-    let response = await fetch(`http://localhost:5000/item`)
+    let response = await fetch(`https://flipzon-backend.onrender.com/item`)
     let res = await response.json()
     setData(res)
   }
@@ -24,7 +24,7 @@ let navigate =useNavigate()
   }, [deletedId])
 
   let deleteItem = async (id) => {
-    await axios.delete(`http://localhost:5000/item/${id}`)
+    await axios.delete(`https://flipzon-backend.onrender.com/item/${id}`)
     alert("Item deleted from cart")
     setDeletedId(id)
   }
