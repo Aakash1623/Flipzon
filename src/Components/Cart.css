@@ -5,6 +5,7 @@
     align-items: center;
     background-color: antiquewhite;
     position: relative;
+    overflow-y: scroll;
 }
 .i{
     height: 80%;

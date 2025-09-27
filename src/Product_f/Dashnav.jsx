@@ -12,9 +12,10 @@ const Dashnav = () => {
     // const email = localStorage.getItem("Email");
     // const password = localStorage.getItem("Password");
     // console.log({ name, email, password });
-    if (logoutuser!=null) {
-     localStorage.removeItem("user")
-      navigate("/");
+    if (logoutuser != null) {
+      localStorage.clear(); // Clear all localStorage to remove any session data
+      navigate("/", { replace: true }); // Redirect and replace history to prevent back navigation
+      window.location.reload(); // Reload the app to ensure a fresh state
     }
   }
 
